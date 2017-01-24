@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     var whichTurnIsIt = true
 
     @IBAction func button1(_ sender: Any) {
-       label1.text = turnBase()
+        label1.text = turnBase()
     }
     @IBAction func button2(_ sender: Any) {
         label2.text = turnBase()
