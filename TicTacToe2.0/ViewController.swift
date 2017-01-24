@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let player1 = PlayerX().playersName
+        
+        print(player1)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

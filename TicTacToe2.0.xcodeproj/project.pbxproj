@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F8E18781E37C1C700818F1B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E18771E37C1C700818F1B /* Player.swift */; };
 		9FFCC6D41E27FF8100820841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCC6D31E27FF8100820841 /* AppDelegate.swift */; };
 		9FFCC6D61E27FF8100820841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCC6D51E27FF8100820841 /* ViewController.swift */; };
 		9FFCC6D91E27FF8100820841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFCC6D71E27FF8100820841 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F8E18771E37C1C700818F1B /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		9FFCC6D01E27FF8100820841 /* TicTacToe2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFCC6D31E27FF8100820841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FFCC6D51E27FF8100820841 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				9FFCC6D31E27FF8100820841 /* AppDelegate.swift */,
 				9FFCC6D51E27FF8100820841 /* ViewController.swift */,
+				9F8E18771E37C1C700818F1B /* Player.swift */,
 				9FFCC6D71E27FF8100820841 /* Main.storyboard */,
 				9FFCC6DD1E27FF8100820841 /* Assets.xcassets */,
 				9FFCC6DF1E27FF8100820841 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8E18781E37C1C700818F1B /* Player.swift in Sources */,
 				9FFCC6DC1E27FF8100820841 /* TicTacToe2_0.xcdatamodeld in Sources */,
 				9FFCC6D61E27FF8100820841 /* ViewController.swift in Sources */,
 				9FFCC6D41E27FF8100820841 /* AppDelegate.swift in Sources */,
@@ -516,6 +520,7 @@
 				9FFCC6FD1E27FF8100820841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FFCC6FE1E27FF8100820841 /* Build configuration list for PBXNativeTarget "TicTacToe2.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +529,7 @@
 				9FFCC7001E27FF8100820841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FFCC7011E27FF8100820841 /* Build configuration list for PBXNativeTarget "TicTacToe2.0UITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +538,7 @@
 				9FFCC7031E27FF8100820841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
