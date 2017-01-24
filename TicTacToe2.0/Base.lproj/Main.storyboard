@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tic Tac Toe-->
+        <!--Tic Tac 2.0-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe2_0" customModuleProvider="target" sceneMemberID="viewController">
@@ -237,7 +237,7 @@
                             <constraint firstItem="43f-tX-QGv" firstAttribute="trailing" secondItem="RZU-Dq-eGv" secondAttribute="trailing" id="zCe-x6-wfp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Tic Tac Toe" id="yPB-cm-rwC"/>
+                    <navigationItem key="navigationItem" title="Tic Tac 2.0" id="yPB-cm-rwC"/>
                     <connections>
                         <outlet property="label1" destination="qIy-St-p7a" id="yyj-IX-ZfQ"/>
                         <outlet property="label2" destination="43f-tX-QGv" id="Dsb-8W-k7v"/>
