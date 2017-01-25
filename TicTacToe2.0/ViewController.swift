@@ -20,8 +20,6 @@ class ViewController: UIViewController {
     @IBOutlet var label9: UILabel!
     @IBOutlet var playerlabel: UILabel!
     
-    var whichTurnIsIt = true
-
     @IBAction func button1(_ sender: Any) {
         label1.text = turnBase()
     }
@@ -37,7 +35,6 @@ class ViewController: UIViewController {
     @IBAction func button5(_ sender: Any) {
         label5.text = turnBase()
     }
-
     @IBAction func button6(_ sender: Any) {
         label6.text = turnBase()
     }
@@ -52,19 +49,18 @@ class ViewController: UIViewController {
     }
 
     func turnBase() -> String {
-        if UserDefaults.standard.bool(forKey: "yes") {
-            UserDefaults.standard.set(false, forKey: "yes")
-           playerlabel.text = PlayerO().playersName
+        if UserDefaults.standard.bool(forKey: "changeTurn") {
+            UserDefaults.standard.set(false, forKey: "changeTurn")
+            playerlabel.text = PlayerO().playersName
             return PlayerX().playersMark
         }
         playerlabel.text = PlayerX().playersName
-        UserDefaults.standard.set(true, forKey: "yes")
+        UserDefaults.standard.set(true, forKey: "changeTurn")
         return PlayerO().playersMark
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-         UserDefaults.standard.set(true, forKey: "yes")
-        print(whichTurnIsIt)
+         UserDefaults.standard.set(true, forKey: "changeTurn")
     }
 }
 
