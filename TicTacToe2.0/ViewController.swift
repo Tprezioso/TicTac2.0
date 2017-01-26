@@ -22,12 +22,15 @@ class ViewController: UIViewController {
     
     @IBAction func button1(_ sender: Any) {
         label1.text = turnBase()
+        winning()
     }
     @IBAction func button2(_ sender: Any) {
         label2.text = turnBase()
+        winning()
     }
     @IBAction func button3(_ sender: Any) {
         label3.text = turnBase()
+        winning()
     }
     @IBAction func button4(_ sender: Any) {
         label4.text = turnBase()
@@ -60,7 +63,12 @@ class ViewController: UIViewController {
     }
   
     func winning() {
-        
+       let labelArray = [label1.text, label2.text, label3.text]
+        for _ in labelArray {
+            if labelArray[0] == labelArray[1] && labelArray[0] == labelArray[2] {
+                print("winner")
+            }
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
