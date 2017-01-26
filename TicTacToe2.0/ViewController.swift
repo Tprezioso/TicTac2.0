@@ -58,6 +58,10 @@ class ViewController: UIViewController {
         UserDefaults.standard.set(true, forKey: "changeTurn")
         return PlayerO().playersMark
     }
+  
+    func winning() {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
          UserDefaults.standard.set(true, forKey: "changeTurn")
