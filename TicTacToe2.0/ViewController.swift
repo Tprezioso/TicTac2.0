@@ -63,12 +63,13 @@ class ViewController: UIViewController {
     }
   
     func winning() {
-       let labelArray = [label1.text, label2.text, label3.text]
-        for _ in labelArray {
-            if labelArray[0] == labelArray[1] && labelArray[0] == labelArray[2] {
-                print("winner")
-            }
-        }
+        let labelArray = [[label1.text, label2.text, label3.text],
+                          [label1.text, label4.text, label7.text]]
+//        for _ in labelArray {
+//            if labelArray[0] == labelArray[1] && labelArray[0] == labelArray[2] {
+//                print("winner")
+//            }
+//        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
