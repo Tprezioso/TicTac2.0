@@ -34,21 +34,27 @@ class ViewController: UIViewController {
     }
     @IBAction func button4(_ sender: Any) {
         label4.text = turnBase()
+        winning()
     }
     @IBAction func button5(_ sender: Any) {
         label5.text = turnBase()
+        winning()
     }
     @IBAction func button6(_ sender: Any) {
         label6.text = turnBase()
+        winning()
     }
     @IBAction func button7(_ sender: Any) {
         label7.text = turnBase()
+        winning()
     }
     @IBAction func button8(_ sender: Any) {
         label8.text = turnBase()
+        winning()
     }
     @IBAction func button9(_ sender: Any) {
         label9.text = turnBase()
+        winning()
     }
 
     func turnBase() -> String {
