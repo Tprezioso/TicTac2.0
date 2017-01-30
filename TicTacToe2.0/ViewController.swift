@@ -82,11 +82,24 @@ class ViewController: UIViewController {
         for labels in labelArray {
             if labels[0] != stringLabel && labels[1] != stringLabel && labels[2] != stringLabel {
                 if labels[0] == labels[1] && labels[0] == labels[2] {
+                    resetGame()
                     print("WINNER!!!!!")
                 }
             }
         }
     }
+    
+    func resetGame() {
+        label1.text = ""
+        label2.text = ""
+        label3.text = ""
+        label4.text = ""
+        label5.text = ""
+        label6.text = ""
+        label7.text = ""
+        label8.text = ""
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
          UserDefaults.standard.set(true, forKey: "changeTurn")
