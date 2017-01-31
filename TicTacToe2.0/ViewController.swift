@@ -82,15 +82,20 @@ class ViewController: UIViewController {
         for labels in labelArray {
             if labels[0] != stringLabel && labels[1] != stringLabel && labels[2] != stringLabel {
                 if labels[0] == labels[1] && labels[0] == labels[2] {
-                    winningAlert()
+                    if labels[0] == PlayerX().playersMark {
+                        winningAlert(winningPlayer: PlayerX().playersName)
+                    } else {
+                        winningAlert(winningPlayer: PlayerO().playersName)
+                    }
+                    
                     print("WINNER!!!!!")
                 }
             }
         }
     }
     
-    func winningAlert() {
-        let alert = UIAlertController(title: "WINNER!", message: "Tap OK to Play Again", preferredStyle: UIAlertControllerStyle.alert)
+    func winningAlert(winningPlayer:String) {
+        let alert = UIAlertController(title: "\(winningPlayer) WINS!", message: "Tap OK to Play Again", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: { action in
             self.resetGame()
