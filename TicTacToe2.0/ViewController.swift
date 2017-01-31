@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         label1.text = turnBase()
         winning()
     }
+    
     @IBAction func button2(_ sender: Any) {
         label2.text = turnBase()
         winning()
@@ -87,7 +88,6 @@ class ViewController: UIViewController {
                     } else {
                         winningAlert(winningPlayer: PlayerO().playersName)
                     }
-                    
                     print("WINNER!!!!!")
                 }
             }
@@ -96,10 +96,10 @@ class ViewController: UIViewController {
     
     func winningAlert(winningPlayer:String) {
         let alert = UIAlertController(title: "\(winningPlayer) WINS!", message: "Tap OK to Play Again", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: { action in
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in
             self.resetGame()
-        })
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     
     func resetGame() {
@@ -111,6 +111,7 @@ class ViewController: UIViewController {
         label6.text = ""
         label7.text = ""
         label8.text = ""
+        label9.text = ""
     }
     
     override func viewDidLoad() {
