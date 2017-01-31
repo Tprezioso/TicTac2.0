@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet var label8: UILabel!
     @IBOutlet var label9: UILabel!
     @IBOutlet var playerlabel: UILabel!
+    @IBOutlet var backgroundView: UIView!
     
     @IBAction func button1(_ sender: Any) {
         label1.text = turnBase()
@@ -116,6 +117,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.insertSubview(self.backgroundView, at: 0)
          UserDefaults.standard.set(true, forKey: "changeTurn")
     }
 }
