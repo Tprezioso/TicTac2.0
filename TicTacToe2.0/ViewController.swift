@@ -30,30 +30,37 @@ class ViewController: UIViewController {
         label2.text = turnBase()
         winning()
     }
+    
     @IBAction func button3(_ sender: Any) {
         label3.text = turnBase()
         winning()
     }
+    
     @IBAction func button4(_ sender: Any) {
         label4.text = turnBase()
         winning()
     }
+    
     @IBAction func button5(_ sender: Any) {
         label5.text = turnBase()
         winning()
     }
+    
     @IBAction func button6(_ sender: Any) {
         label6.text = turnBase()
         winning()
     }
+    
     @IBAction func button7(_ sender: Any) {
         label7.text = turnBase()
         winning()
     }
+    
     @IBAction func button8(_ sender: Any) {
         label8.text = turnBase()
         winning()
     }
+    
     @IBAction func button9(_ sender: Any) {
         label9.text = turnBase()
         winning()
@@ -72,7 +79,6 @@ class ViewController: UIViewController {
   
     func winning() {
         let stringLabel = ""
-        
         let labelArray = [[label1.text, label2.text, label3.text],
                           [label1.text, label4.text, label7.text],
                           [label1.text, label5.text, label9.text],
@@ -81,6 +87,7 @@ class ViewController: UIViewController {
                           [label7.text, label8.text, label9.text],
                           [label8.text, label5.text, label2.text],
                           [label9.text, label6.text, label3.text]]
+
         for labels in labelArray {
             if labels[0] != stringLabel && labels[1] != stringLabel && labels[2] != stringLabel {
                 if labels[0] == labels[1] && labels[0] == labels[2] {
@@ -89,7 +96,6 @@ class ViewController: UIViewController {
                     } else {
                         winningAlert(winningPlayer: PlayerO().playersName)
                     }
-                    print("WINNER!!!!!")
                 }
             }
         }
