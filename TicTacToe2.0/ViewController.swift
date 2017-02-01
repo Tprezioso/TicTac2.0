@@ -132,7 +132,6 @@ class ViewController: UIViewController {
     
     func checkForTie() {
         var checkArray = [String]()
-        
         let labelTextArray = [label1.text,
                               label2.text,
                               label3.text,
