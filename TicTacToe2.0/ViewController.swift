@@ -87,7 +87,7 @@ class ViewController: UIViewController {
                           [label7.text, label8.text, label9.text],
                           [label8.text, label5.text, label2.text],
                           [label9.text, label6.text, label3.text]]
-
+        
         for labels in labelArray {
             if labels[0] != stringLabel && labels[1] != stringLabel && labels[2] != stringLabel {
                 if labels[0] == labels[1] && labels[0] == labels[2] {
@@ -99,6 +99,7 @@ class ViewController: UIViewController {
                 }
             }
         }
+        checkForTie()
     }
     
     func winningAlert(winningPlayer:String) {
@@ -108,7 +109,15 @@ class ViewController: UIViewController {
         }))
         self.present(alert, animated: true, completion: nil)
     }
-    
+
+    func tieAlert() {
+        let alert = UIAlertController(title: "TIE GAME!", message: "Tap OK to Play Again", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in
+            self.resetGame()
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+
     func resetGame() {
         label1.text = ""
         label2.text = ""
@@ -119,6 +128,28 @@ class ViewController: UIViewController {
         label7.text = ""
         label8.text = ""
         label9.text = ""
+    }
+    
+    func checkForTie() {
+        var checkArray = [String]()
+        
+        let labelTextArray = [label1.text,
+                              label2.text,
+                              label3.text,
+                              label4.text,
+                              label5.text,
+                              label6.text,
+                              label7.text,
+                              label8.text,
+                              label9.text]
+        for textLabel in labelTextArray {
+            if !(textLabel?.isEmpty)! {
+               checkArray.append(textLabel!)
+                if checkArray.count == 9 {
+                    tieAlert()
+                }
+            }
+        }
     }
     
     override func viewDidLoad() {
