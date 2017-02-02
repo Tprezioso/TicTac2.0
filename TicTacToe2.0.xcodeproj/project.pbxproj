@@ -80,6 +80,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F8E187B1E43CD5C00818F1B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FFCC6D51E27FF8100820841 /* ViewController.swift */,
+				9F8E18791E43B89C00818F1B /* WelcomeViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9F8E187C1E43CD9E00818F1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F8E18771E37C1C700818F1B /* Player.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9F8E187D1E43CDC300818F1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FFCC6D71E27FF8100820841 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		9FFCC6C71E27FF8100820841 = {
 			isa = PBXGroup;
 			children = (
@@ -104,10 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				9FFCC6D31E27FF8100820841 /* AppDelegate.swift */,
-				9FFCC6D51E27FF8100820841 /* ViewController.swift */,
-				9F8E18771E37C1C700818F1B /* Player.swift */,
-				9FFCC6D71E27FF8100820841 /* Main.storyboard */,
-				9F8E18791E43B89C00818F1B /* WelcomeViewController.swift */,
+				9F8E187C1E43CD9E00818F1B /* Model */,
+				9F8E187B1E43CD5C00818F1B /* ViewControllers */,
+				9F8E187D1E43CDC300818F1B /* View */,
 				9FFCC6DD1E27FF8100820841 /* Assets.xcassets */,
 				9FFCC6DF1E27FF8100820841 /* LaunchScreen.storyboard */,
 				9FFCC6E21E27FF8100820841 /* Info.plist */,
