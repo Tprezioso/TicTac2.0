@@ -69,10 +69,10 @@ class ViewController: UIViewController {
     func turnBase() -> String {
         if UserDefaults.standard.bool(forKey: "changeTurn") {
             UserDefaults.standard.set(false, forKey: "changeTurn")
-            playerlabel.text = PlayerO().playersName
+            playerlabel.text = "\(PlayerO().playersName) \n \(PlayerO().playersMark)"
             return PlayerX().playersMark
         }
-        playerlabel.text = PlayerX().playersName
+        playerlabel.text = "\(PlayerX().playersName) \n \(PlayerX().playersMark)"
         UserDefaults.standard.set(true, forKey: "changeTurn")
         return PlayerO().playersMark
     }
@@ -155,6 +155,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.insertSubview(self.backgroundView, at: 0)
          UserDefaults.standard.set(true, forKey: "changeTurn")
+        playerlabel.text = "\(PlayerX().playersName) \n\(PlayerX().playersMark)"
     }
 }
 

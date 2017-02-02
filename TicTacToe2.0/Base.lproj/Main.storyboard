@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="faK-UI-m3I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s6r-Pc-jIa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -121,7 +121,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzA-HD-mTj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1 X" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzA-HD-mTj">
                                 <rect key="frame" x="16" y="480" width="343" height="167"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -314,25 +314,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.2" y="138.98050974512745"/>
+            <point key="canvasLocation" x="2018.4000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Tic Tac 2.0-->
+        <scene sceneID="AHw-Ec-LTC">
+            <objects>
+                <viewController id="o9Z-vl-Ydv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="19W-4H-f4P"/>
+                        <viewControllerLayoutGuide type="bottom" id="wsy-Eh-yea"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="spN-nt-9Cd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFT-Qa-QCW">
+                                <rect key="frame" x="113" y="318" width="149" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DUr-xp-hrB"/>
+                                    <constraint firstAttribute="width" constant="149" id="beR-tX-m1f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="2 Player"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="N1g-H9-IyW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO TIC TAC 2.0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyA-PV-Z22">
+                                <rect key="frame" x="16" y="72" width="343" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="8xD-GS-lCW"/>
+                                    <constraint firstAttribute="height" constant="125" id="Waa-jD-VY0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qFT-Qa-QCW" firstAttribute="centerY" secondItem="spN-nt-9Cd" secondAttribute="centerY" id="ATu-Le-OtO"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="kyA-PV-Z22" secondAttribute="leading" id="Ial-CG-hF5"/>
+                            <constraint firstItem="qFT-Qa-QCW" firstAttribute="centerX" secondItem="spN-nt-9Cd" secondAttribute="centerX" id="UEU-uV-Tbw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kyA-PV-Z22" secondAttribute="trailing" id="UyV-tM-0O1"/>
+                            <constraint firstItem="kyA-PV-Z22" firstAttribute="top" secondItem="19W-4H-f4P" secondAttribute="bottom" constant="8" id="c1f-Ue-YhT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tic Tac 2.0" id="xaM-ds-jPW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dtV-GL-Dt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232.8" y="138.98050974512745"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="hvq-K4-Bv1">
+        <scene sceneID="FYB-nm-HKm">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="faK-UI-m3I" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s6r-Pc-jIa" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IKs-ty-CMK">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fN9-Ek-lYW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Flp-Mz-Al9"/>
+                        <segue destination="o9Z-vl-Ydv" kind="relationship" relationship="rootViewController" id="X4h-SJ-2jL"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jxd-xX-pm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXw-5L-MLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="319" y="139"/>
+            <point key="canvasLocation" x="293.60000000000002" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
