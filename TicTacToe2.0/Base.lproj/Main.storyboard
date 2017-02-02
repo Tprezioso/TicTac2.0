@@ -319,7 +319,7 @@
         <!--Tic Tac 2.0-->
         <scene sceneID="AHw-Ec-LTC">
             <objects>
-                <viewController id="o9Z-vl-Ydv" sceneMemberID="viewController">
+                <viewController id="o9Z-vl-Ydv" customClass="WelcomeViewController" customModule="TicTacToe2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="19W-4H-f4P"/>
                         <viewControllerLayoutGuide type="bottom" id="wsy-Eh-yea"/>
@@ -337,6 +337,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="2 Player"/>
                                 <connections>
+                                    <action selector="twoPlayerButton:" destination="o9Z-vl-Ydv" eventType="touchUpInside" id="FIk-u5-siM"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="N1g-H9-IyW"/>
                                 </connections>
                             </button>
@@ -350,17 +351,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IA-yp-Zfu">
+                                <rect key="frame" x="164" y="142" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hiddenTwoPointOButton:" destination="o9Z-vl-Ydv" eventType="touchUpInside" id="6LB-mg-zVE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8IA-yp-Zfu" firstAttribute="top" secondItem="19W-4H-f4P" secondAttribute="bottom" constant="78" id="1fc-Zr-k2d"/>
                             <constraint firstItem="qFT-Qa-QCW" firstAttribute="centerY" secondItem="spN-nt-9Cd" secondAttribute="centerY" id="ATu-Le-OtO"/>
                             <constraint firstAttribute="leadingMargin" secondItem="kyA-PV-Z22" secondAttribute="leading" id="Ial-CG-hF5"/>
                             <constraint firstItem="qFT-Qa-QCW" firstAttribute="centerX" secondItem="spN-nt-9Cd" secondAttribute="centerX" id="UEU-uV-Tbw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kyA-PV-Z22" secondAttribute="trailing" id="UyV-tM-0O1"/>
+                            <constraint firstItem="8IA-yp-Zfu" firstAttribute="leading" secondItem="spN-nt-9Cd" secondAttribute="leadingMargin" constant="148" id="WHk-Zy-jo2"/>
                             <constraint firstItem="kyA-PV-Z22" firstAttribute="top" secondItem="19W-4H-f4P" secondAttribute="bottom" constant="8" id="c1f-Ue-YhT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8IA-yp-Zfu" secondAttribute="trailing" constant="149" id="iTI-vI-G1h"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tic Tac 2.0" id="xaM-ds-jPW"/>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="kyA-PV-Z22" id="kuA-QX-EQW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtV-GL-Dt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
