@@ -16,6 +16,6 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func hiddenTwoPointOButton(_ sender: Any) {
-    
+    // MARK: - Added secret View
     }
 }
