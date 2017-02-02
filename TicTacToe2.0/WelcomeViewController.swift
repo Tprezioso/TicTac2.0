@@ -12,7 +12,10 @@ class WelcomeViewController: UIViewController {
     @IBOutlet var welcomeLabel: UILabel!
 
     @IBAction func twoPlayerButton(_ sender: Any) {
+    
     }
+    
     @IBAction func hiddenTwoPointOButton(_ sender: Any) {
+    
     }
 }
