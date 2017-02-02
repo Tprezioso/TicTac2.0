@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 struct PlayerX {
     let playersName = "Player 1"
