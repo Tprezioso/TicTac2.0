@@ -10,10 +10,12 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     @IBOutlet var welcomeLabel: UILabel!
+    @IBOutlet var terminalView: UITextView!
 
     @IBAction func twoPlayerButton(_ sender: Any) {
     
     }
+    
     
     @IBAction func hiddenTwoPointOButton(_ sender: Any) {
     // MARK: - Added secret View

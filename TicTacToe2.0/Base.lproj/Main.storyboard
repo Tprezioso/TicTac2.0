@@ -328,19 +328,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFT-Qa-QCW">
-                                <rect key="frame" x="113" y="318" width="149" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="DUr-xp-hrB"/>
-                                    <constraint firstAttribute="width" constant="149" id="beR-tX-m1f"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="2 Player"/>
-                                <connections>
-                                    <action selector="twoPlayerButton:" destination="o9Z-vl-Ydv" eventType="touchUpInside" id="FIk-u5-siM"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="N1g-H9-IyW"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO TIC TAC 2.0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyA-PV-Z22">
                                 <rect key="frame" x="16" y="72" width="343" height="125"/>
                                 <constraints>
@@ -360,21 +347,50 @@
                                     <action selector="hiddenTwoPointOButton:" destination="o9Z-vl-Ydv" eventType="touchUpInside" id="6LB-mg-zVE"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bZW-Xr-mdv">
+                                <rect key="frame" x="16" y="205" width="343" height="167"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="5MI-wd-2ho"/>
+                                    <constraint firstAttribute="width" constant="343" id="XWk-CC-pzf"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFT-Qa-QCW">
+                                <rect key="frame" x="113" y="414" width="149" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lqf-Vi-YSt"/>
+                                    <constraint firstAttribute="width" constant="149" id="W4t-kn-JLH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="2 Player"/>
+                                <connections>
+                                    <action selector="twoPlayerButton:" destination="o9Z-vl-Ydv" eventType="touchUpInside" id="FIk-u5-siM"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="N1g-H9-IyW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8IA-yp-Zfu" firstAttribute="top" secondItem="19W-4H-f4P" secondAttribute="bottom" constant="78" id="1fc-Zr-k2d"/>
-                            <constraint firstItem="qFT-Qa-QCW" firstAttribute="centerY" secondItem="spN-nt-9Cd" secondAttribute="centerY" id="ATu-Le-OtO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bZW-Xr-mdv" secondAttribute="trailing" id="6LO-W0-QmB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qFT-Qa-QCW" secondAttribute="trailing" constant="97" id="968-pb-0bI"/>
                             <constraint firstAttribute="leadingMargin" secondItem="kyA-PV-Z22" secondAttribute="leading" id="Ial-CG-hF5"/>
-                            <constraint firstItem="qFT-Qa-QCW" firstAttribute="centerX" secondItem="spN-nt-9Cd" secondAttribute="centerX" id="UEU-uV-Tbw"/>
+                            <constraint firstItem="bZW-Xr-mdv" firstAttribute="top" secondItem="kyA-PV-Z22" secondAttribute="bottom" constant="8" id="TzP-dV-aRt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kyA-PV-Z22" secondAttribute="trailing" id="UyV-tM-0O1"/>
                             <constraint firstItem="8IA-yp-Zfu" firstAttribute="leading" secondItem="spN-nt-9Cd" secondAttribute="leadingMargin" constant="148" id="WHk-Zy-jo2"/>
                             <constraint firstItem="kyA-PV-Z22" firstAttribute="top" secondItem="19W-4H-f4P" secondAttribute="bottom" constant="8" id="c1f-Ue-YhT"/>
+                            <constraint firstItem="qFT-Qa-QCW" firstAttribute="top" secondItem="bZW-Xr-mdv" secondAttribute="bottom" constant="42" id="cU3-lz-LPg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8IA-yp-Zfu" secondAttribute="trailing" constant="149" id="iTI-vI-G1h"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bZW-Xr-mdv" secondAttribute="leading" id="tiX-9s-YUw"/>
+                            <constraint firstItem="qFT-Qa-QCW" firstAttribute="leading" secondItem="spN-nt-9Cd" secondAttribute="leadingMargin" constant="97" id="u0L-jj-3pJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tic Tac 2.0" id="xaM-ds-jPW"/>
                     <connections>
+                        <outlet property="terminalView" destination="bZW-Xr-mdv" id="yW1-xR-jhL"/>
                         <outlet property="welcomeLabel" destination="kyA-PV-Z22" id="kuA-QX-EQW"/>
                     </connections>
                 </viewController>
@@ -387,7 +403,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s6r-Pc-jIa" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fN9-Ek-lYW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fN9-Ek-lYW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
