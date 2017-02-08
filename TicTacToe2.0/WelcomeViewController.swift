@@ -16,9 +16,24 @@ class WelcomeViewController: UIViewController {
     
     }
     
+    func setupTerminal() {
+        let date = Date()
+        let calendar = Calendar.current
+        
+        let hour = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        let seconds = calendar.component(.second, from: date)
+        
+        terminalView.text = "❤️ \(hour):\(minutes):\(seconds) "
+    }
     
     @IBAction func hiddenTwoPointOButton(_ sender: Any) {
     // MARK: - Added secret View
         print("secret shhhhhh")
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupTerminal()
     }
 }
