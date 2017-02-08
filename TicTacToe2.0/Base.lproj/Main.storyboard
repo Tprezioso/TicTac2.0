@@ -347,7 +347,7 @@
                                     <action selector="hiddenTwoPointOButton:" destination="o9Z-vl-Ydv" eventType="touchUpInside" id="6LB-mg-zVE"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bZW-Xr-mdv">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZW-Xr-mdv">
                                 <rect key="frame" x="16" y="205" width="343" height="167"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -355,7 +355,6 @@
                                     <constraint firstAttribute="width" constant="343" id="XWk-CC-pzf"/>
                                 </constraints>
                                 <color key="textColor" red="0.27843138579999999" green="0.98823535439999999" blue="0.18431372939999999" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFT-Qa-QCW">
@@ -403,7 +402,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s6r-Pc-jIa" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fN9-Ek-lYW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fN9-Ek-lYW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

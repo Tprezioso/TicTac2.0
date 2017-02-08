@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class WelcomeViewController: UIViewController, UITextViewDelegate {
     @IBOutlet var welcomeLabel: UILabel!
     @IBOutlet var terminalView: UITextView!
 
@@ -16,7 +16,7 @@ class WelcomeViewController: UIViewController {
     
     }
     
-    func setupTerminal() {
+    func setupTerminal() -> String {
         let date = Date()
         let calendar = Calendar.current
         
@@ -24,16 +24,35 @@ class WelcomeViewController: UIViewController {
         let minutes = calendar.component(.minute, from: date)
         let seconds = calendar.component(.second, from: date)
         
-        terminalView.text = "❤️ \(hour):\(minutes):\(seconds) "
+        return "❤️ \(hour):\(minutes):\(seconds) "
     }
     
     @IBAction func hiddenTwoPointOButton(_ sender: Any) {
     // MARK: - Added secret View
         print("secret shhhhhh")
     }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if (text == "\n") {
+            //action here 
+            UserDefaults.standard.set(terminalView.text!, forKey: "terminalText")
+            let terminalStuff = "\(UserDefaults.standard.value(forKey: "terminalText")!)\n\(setupTerminal())"
+            
+            terminalView.text = terminalStuff
+            dissmissKeyboard()
+            
+            return false
+        }
+        return true
+    }
+    
+    func dissmissKeyboard() {
+        terminalView.resignFirstResponder()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTerminal()
+        self.terminalView.delegate = self
+       terminalView.text = setupTerminal()
     }
 }
