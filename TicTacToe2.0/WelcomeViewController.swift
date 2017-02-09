@@ -19,11 +19,9 @@ class WelcomeViewController: UIViewController, UITextViewDelegate {
     func setupTerminal() -> String {
         let date = Date()
         let calendar = Calendar.current
-        
         let hour = calendar.component(.hour, from: date)
         let minutes = calendar.component(.minute, from: date)
         let seconds = calendar.component(.second, from: date)
-        
         return "❤️ \(hour):\(minutes):\(seconds) "
     }
     
@@ -34,13 +32,10 @@ class WelcomeViewController: UIViewController, UITextViewDelegate {
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if (text == "\n") {
-            //action here 
             UserDefaults.standard.set(terminalView.text!, forKey: "terminalText")
             let terminalStuff = "\(UserDefaults.standard.value(forKey: "terminalText")!)\n\(setupTerminal())"
-            
             terminalView.text = terminalStuff
             dissmissKeyboard()
-            
             return false
         }
         return true
