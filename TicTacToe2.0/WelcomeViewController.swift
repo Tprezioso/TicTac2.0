@@ -11,7 +11,6 @@ import UIKit
 class WelcomeViewController: UIViewController, UITextViewDelegate {
     @IBOutlet var welcomeLabel: UILabel!
     @IBOutlet var terminalView: UITextView!
-
     @IBAction func twoPlayerButton(_ sender: Any) {
     
     }
@@ -32,9 +31,22 @@ class WelcomeViewController: UIViewController, UITextViewDelegate {
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if (text == "\n") {
+            var userText = " "
+            userText = String(terminalView.text.characters.suffix(2))
+            
+            print("\(userText) >>>>>>>>>>")
+            switch userText {
+            case "cd":
+                print("change directory")
+            case "ls":
+                print("list directory")
+            default:
+                print ("Not valid input")
+            }
             UserDefaults.standard.set(terminalView.text!, forKey: "terminalText")
             let terminalStuff = "\(UserDefaults.standard.value(forKey: "terminalText")!)\n\(setupTerminal())"
             terminalView.text = terminalStuff
+
             dissmissKeyboard()
             return false
         }
@@ -49,5 +61,6 @@ class WelcomeViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         self.terminalView.delegate = self
        terminalView.text = setupTerminal()
+        
     }
 }
