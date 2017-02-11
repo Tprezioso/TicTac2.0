@@ -33,8 +33,7 @@ class WelcomeViewController: UIViewController, UITextViewDelegate {
         if (text == "\n") {
             var userText = " "
             userText = String(terminalView.text.characters.suffix(2))
-            
-            print("\(userText) >>>>>>>>>>")
+            print("\(userText)")
             switch userText {
             case "cd":
                 print("change directory")
@@ -46,7 +45,6 @@ class WelcomeViewController: UIViewController, UITextViewDelegate {
             UserDefaults.standard.set(terminalView.text!, forKey: "terminalText")
             let terminalStuff = "\(UserDefaults.standard.value(forKey: "terminalText")!)\n\(setupTerminal())"
             terminalView.text = terminalStuff
-
             dissmissKeyboard()
             return false
         }
