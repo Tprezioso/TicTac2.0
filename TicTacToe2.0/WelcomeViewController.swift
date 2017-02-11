@@ -38,14 +38,17 @@ class WelcomeViewController: UIViewController, UITextViewDelegate {
             case "cd":
                 print("change directory")
             case "ls":
+                UserDefaults.standard.set(terminalView.text!, forKey: "terminalText")
+                let ticTacToeShow = "\(UserDefaults.standard.value(forKey: "terminalText")!) \nTic_Tac_Toe.exe\n\(setupTerminal())"
+                terminalView.text = ticTacToeShow
                 print("list directory")
             default:
+                UserDefaults.standard.set(terminalView.text!, forKey: "terminalText")
+                let terminalStuff = "\(UserDefaults.standard.value(forKey: "terminalText")!)\n\(setupTerminal())"
+                terminalView.text = terminalStuff
+                dissmissKeyboard()
                 print ("Not valid input")
             }
-            UserDefaults.standard.set(terminalView.text!, forKey: "terminalText")
-            let terminalStuff = "\(UserDefaults.standard.value(forKey: "terminalText")!)\n\(setupTerminal())"
-            terminalView.text = terminalStuff
-            dissmissKeyboard()
             return false
         }
         return true
