@@ -42,6 +42,12 @@ class WelcomeViewController: UIViewController, UITextViewDelegate {
                 let ticTacToeShow = "\(UserDefaults.standard.value(forKey: "terminalText")!) \nTic_Tac_Toe.exe\n\(setupTerminal())"
                 terminalView.text = ticTacToeShow
                 print("list directory")
+            // TODO: ar case is for clear statement should fix after just in case
+            case "ar":
+                UserDefaults.standard.set(terminalView.text!, forKey: "terminalText")
+                terminalView.text = "\(setupTerminal())"
+            case "xe":
+                print("open tictactoe")
             default:
                 UserDefaults.standard.set(terminalView.text!, forKey: "terminalText")
                 let terminalStuff = "\(UserDefaults.standard.value(forKey: "terminalText")!)\n\(setupTerminal())"
