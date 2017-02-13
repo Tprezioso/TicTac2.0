@@ -50,9 +50,12 @@ class WelcomeViewController: UIViewController, UITextViewDelegate {
                 terminalView.text = "\(setupTerminal())"
             case "xe":
                 print("open tictactoe")
+                UserDefaults.standard.set(terminalView.text!, forKey: "terminalText")
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let controller = storyboard.instantiateViewController(withIdentifier: "ticTacToe")
+                let ticTacToeShow = "\(UserDefaults.standard.value(forKey: "terminalText")!)\n\(setupTerminal())"
                 self.navigationController?.pushViewController(controller, animated: true)
+                terminalView.text = ticTacToeShow
             default:
                 UserDefaults.standard.set(terminalView.text!, forKey: "terminalText")
                 let terminalStuff = "\(UserDefaults.standard.value(forKey: "terminalText")!)\n\(setupTerminal())"
