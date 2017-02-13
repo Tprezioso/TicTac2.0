@@ -11,7 +11,7 @@
 		9F8E18781E37C1C700818F1B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E18771E37C1C700818F1B /* Player.swift */; };
 		9F8E187A1E43B89C00818F1B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8E18791E43B89C00818F1B /* WelcomeViewController.swift */; };
 		9FFCC6D41E27FF8100820841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCC6D31E27FF8100820841 /* AppDelegate.swift */; };
-		9FFCC6D61E27FF8100820841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCC6D51E27FF8100820841 /* ViewController.swift */; };
+		9FFCC6D61E27FF8100820841 /* TicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCC6D51E27FF8100820841 /* TicViewController.swift */; };
 		9FFCC6D91E27FF8100820841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFCC6D71E27FF8100820841 /* Main.storyboard */; };
 		9FFCC6DC1E27FF8100820841 /* TicTacToe2_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCC6DA1E27FF8100820841 /* TicTacToe2_0.xcdatamodeld */; };
 		9FFCC6DE1E27FF8100820841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFCC6DD1E27FF8100820841 /* Assets.xcassets */; };
@@ -51,7 +51,7 @@
 		9F8E18791E43B89C00818F1B /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		9FFCC6D01E27FF8100820841 /* TicTacToe2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFCC6D31E27FF8100820841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FFCC6D51E27FF8100820841 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FFCC6D51E27FF8100820841 /* TicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicViewController.swift; sourceTree = "<group>"; };
 		9FFCC6D81E27FF8100820841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FFCC6DB1E27FF8100820841 /* TicTacToe2_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TicTacToe2_0.xcdatamodel; sourceTree = "<group>"; };
 		9FFCC6DD1E27FF8100820841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		9F8E187B1E43CD5C00818F1B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9FFCC6D51E27FF8100820841 /* ViewController.swift */,
+				9FFCC6D51E27FF8100820841 /* TicViewController.swift */,
 				9F8E18791E43B89C00818F1B /* WelcomeViewController.swift */,
 			);
 			name = ViewControllers;
@@ -485,7 +485,7 @@
 				9F8E18781E37C1C700818F1B /* Player.swift in Sources */,
 				9F8E187A1E43B89C00818F1B /* WelcomeViewController.swift in Sources */,
 				9FFCC6DC1E27FF8100820841 /* TicTacToe2_0.xcdatamodeld in Sources */,
-				9FFCC6D61E27FF8100820841 /* ViewController.swift in Sources */,
+				9FFCC6D61E27FF8100820841 /* TicViewController.swift in Sources */,
 				9FFCC6D41E27FF8100820841 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

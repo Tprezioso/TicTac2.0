@@ -12,6 +12,8 @@ class WelcomeViewController: UIViewController, UITextViewDelegate {
     @IBOutlet var welcomeLabel: UILabel!
     @IBOutlet var terminalView: UITextView!
     @IBAction func twoPlayerButton(_ sender: Any) {
+        
+        
     
     }
     
@@ -48,6 +50,9 @@ class WelcomeViewController: UIViewController, UITextViewDelegate {
                 terminalView.text = "\(setupTerminal())"
             case "xe":
                 print("open tictactoe")
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "ticTacToe")
+                self.navigationController?.pushViewController(controller, animated: true)
             default:
                 UserDefaults.standard.set(terminalView.text!, forKey: "terminalText")
                 let terminalStuff = "\(UserDefaults.standard.value(forKey: "terminalText")!)\n\(setupTerminal())"

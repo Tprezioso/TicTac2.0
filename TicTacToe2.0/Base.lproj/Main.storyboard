@@ -13,7 +13,7 @@
         <!--Tic Tac 2.0-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ticTacToe" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="TicViewController" customModule="TicTacToe2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -314,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2018.4000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="2310" y="139"/>
         </scene>
         <!--Tic Tac 2.0-->
         <scene sceneID="AHw-Ec-LTC">
@@ -395,7 +395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtV-GL-Dt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1232.8" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1545" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FYB-nm-HKm">
@@ -413,7 +413,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXw-5L-MLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="494" y="139"/>
+            <point key="canvasLocation" x="776" y="139"/>
         </scene>
     </scenes>
 </document>
