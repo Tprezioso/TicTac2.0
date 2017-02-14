@@ -72,10 +72,12 @@ class WelcomeViewController: UIViewController, UITextViewDelegate {
         terminalView.resignFirstResponder()
     }
 
+    func setupTerminalWelcome() {
+        terminalView.text = "\(setupTerminal()) WELCOME TO TIC TAC 2.0 \n TO START TYPE GAME TYPE IN tictactoe.exe\n\(setupTerminal())"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.terminalView.delegate = self
-       terminalView.text = "\(setupTerminal()) WELCOME TO TIC TAC 2.0 \n TO START TYPE GAME TYPE IN tictactoe.exe\n\(setupTerminal())"
-        
+        setupTerminalWelcome()
     }
 }
